@@ -1,0 +1,169 @@
+html 
+{
+    background: #eedcf5;
+}
+
+body 
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;             
+    align-items: flex-start;
+    gap: 40px;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;                       
+    background-image: url("background.png");
+    background-size: cover;
+    opacity: 0.25;                 
+    pointer-events: none;          
+    z-index: -1;                    
+}
+
+h3 { margin: 8px 0; }
+
+a { color: #08566a; }
+
+
+.main 
+{
+    width: 280px;
+    flex-shrink: 0;
+    padding: 24px;
+    background: linear-gradient(360deg, #7d2a48ae 0%, #560428 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(67, 14, 39, 0.608);
+}
+
+.main h1 { font-size: 27px; color: #f7c673; }
+.main h2 { font-size: 18px; color: #fedca0; }
+.main p  { color: #ffffff; }
+
+.vln 
+{
+    display: block;
+    padding: 10px 14px;
+    background: #fce6d0;
+    border-radius: 12px;
+    color: #08566a;
+    text-decoration: none;
+}
+
+.vln:hover 
+{
+    background: #08566a;
+    color: #fce6d0;
+}
+
+
+.soba 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;     
+    gap: 20px;
+}
+
+.soba h1 
+{
+    font-size: 50px;
+    color: #08566a;
+    text-align: center;
+    margin: 0;
+}
+
+.senzor 
+{
+    display: flex;              
+    gap: 20px;
+}
+
+.senzor .box 
+{
+    flex: 1;                    
+    min-height: 300px;         
+}
+
+.senzor .box h2
+{
+    font-size: 30px;
+    color: #560428;
+    text-align: center;
+    margin: 0;
+}
+
+.senzor .box:hover 
+{
+    background: #08566a;
+    color: #fce6d0;
+}
+
+.box 
+{
+    background: linear-gradient(360deg, #fce6d0b3 0%, #e9b786 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px #430e274d;
+}
+
+.box1
+{
+    background:linear-gradient(360deg, #ecf9fcb8 0%, #7da3ab 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px #430e274d;
+}
+
+.box:hover
+{
+    color: #560428;
+}
+
+.box:hover h2 {
+    color: #fce6d0;
+}
+
+.box:hover p,
+.box:hover li {
+    color: #ecf9fc;
+}
+
+.box label 
+{
+    font-size: 17px;
+    display: block;       
+    margin-bottom: 15px;   
+}
+.box h2 { font-size: 25px; color: #560428; margin-top: 0; text-decoration: underline;}
+.box p { color: #084150; }
+
+.box1 h3 
+{ 
+    font-size: 20px; 
+    color: #560428; 
+    margin-top: 0; 
+    text-decoration: underline;
+}
+
+.box1 li { color: #260212; }
+
+.box1:hover {
+    background: #560428;
+}
+
+.box1:hover h3 {
+    color: #ecf9fc;
+}
+
+.box1:hover li {
+    color: #fce6d0;
+}
+
+.box input[type="range"] 
+{
+    width: 100%;
+}
